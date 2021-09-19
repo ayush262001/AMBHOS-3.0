@@ -1,0 +1,70 @@
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px !important;
+    margin: 30px;
+    border:1px solid rgba(0,0,0,0.4);
+    border-radius: 8px;
+    box-shadow: -2px 4px 20px -4px rgba(0,0,0,0.8);
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    padding-top: 20px !important;
+    padding-bottom: 0px !important;
+}
+
+.item > h2, .item >p, .item >h4{
+    margin: 8px;
+}
+
+.image-logo{
+    width: 200px !important;
+    height: 200px !important;
+    display: inline;
+    border-radius: 10px !important;
+}
+
+.name{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100 !important;
+    color: rgba(0,0,0,0.8);
+}
+
+.location{
+    font-weight: 500 !important;
+    color: black;
+    margin-top: 3px !important;
+}
+
+.verified{
+    color: green !important;
+    font-weight: 600 !important;
+    margin: 20px 0px !important;
+}
+
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 196, 0);
+    font-size: 25px;
+    margin: 0px !important;
+}
+
+.bottom > h4{
+    margin: 0px !important;
+}
+
+.star{
+    color: rgb(255, 196, 0) !important;
+}
+
+.button_{
+    color: white !important;
+    background-color: blue !important;
+    width: 100%;
+    margin-top: 10px !important;
+}
+
+

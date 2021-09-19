@@ -1,0 +1,120 @@
+.createButton{
+    border: 2px solid grey !important;
+    margin: 30px 40px !important;
+}
+
+.questionBox{
+    width: 95%;
+    border: 2px solid grey !important;
+    min-height: 500px !important;
+    margin: 20px auto !important;
+    border-radius: 5px !important;
+    overflow: scroll !important;
+}
+
+.questionBox::-webkit-scrollbar{
+    display: none !important;
+}
+
+.allservices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.input{
+    border: none !important;
+    border-bottom: 2px solid orangered !important;
+    color: grey !important;
+    font-size: 15px !important;
+    outline: none !important;
+    width: 300px !important;
+    margin: 40px 0px !important;
+}
+
+.services-single{
+    box-shadow: -2px 6px 15px -4px rgba(0, 0, 0, 0.7) !important;
+}
+
+.services-single > h2, .services-single > p{
+    margin: 5px ;
+    font-family: Montserrat Alternates !important;
+    color: lightgreen !important;
+    text-shadow: -1px 1px rgba(0, 0, 0, 0.8) !important;
+}
+
+.pending{
+    color: red !important;
+}
+
+.verify{
+    color: green !important;
+}
+.button{
+    border: 2px solid grey !important;
+    width: 300px !important;
+}
+
+.services-single > p{
+    margin-bottom: 20px !important;
+    color: grey !important;
+}
+
+.border{
+    color: grey !important;
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+.services-single{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px !important;
+    border: 1px solid grey !important;
+    border-radius:5px !important;
+    margin: 30px !important;
+    padding-top: 10px;
+}
+.imagesingle{
+    width: 250px !important;
+    height: 250px !important;
+}
+
+.buttonred{
+    background-color: red !important;
+    color: #fff !important;
+    width: 100% !important;
+}
+
+.q{
+    display: flex !important;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+    color: grey !important;
+}
+
+.texthere{
+    width: 80% !important;
+    height: 300px !important;
+    margin: 20px 0px !important;
+    color: grey !important;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px !important;
+}
+
+.imageupload{
+    opacity: 0;
+}
+
+.icon{
+    font-size:80px !important;
+    background-color: peachpuff !important;
+    border-radius: 50%;
+    padding: 10px !important;
+    color: black !important;
+    margin: 0 !important;
+}

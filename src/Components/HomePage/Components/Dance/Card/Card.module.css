@@ -1,0 +1,28 @@
+.up{
+    
+    margin: 0px 20px;
+    margin-top:-130px;
+    color: white;
+    font-family:Montserrat Alternates ;
+    background-color: none !important;
+}
+
+.inrow{
+    display: flex;
+    align-items: center;
+    width: 250px;
+    justify-content:space-between;
+}
+
+.imagedesing{
+     width: 300px;
+     height: fit-content;
+     border-radius: 5px !important;
+}
+
+.card{
+    margin: 90px 0px !important;
+}
+
+
+
