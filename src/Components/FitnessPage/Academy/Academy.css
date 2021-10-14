@@ -1,0 +1,19 @@
+.icons{
+    width: fit-content;
+    height: fit-content;
+    margin: 20px;
+}
+
+.FilterIcon{
+    font-size: 40px !important;
+    color: skyblue;
+}
+
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    cursor: pointer;
+}

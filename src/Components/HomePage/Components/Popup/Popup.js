@@ -1,10 +1,11 @@
 import React, {useEffect} from 'react'
 import './Popup.css';
 import CloseIcon from '@material-ui/icons/Close';
+import { LaptopWindowsRounded } from '@material-ui/icons';
 function Popup({category}) {
 
     const closethisPopup =()=>{
-
+             window.location.reload();
     }
 
     const gotoFitnessAcademy=()=>{
@@ -26,7 +27,7 @@ function Popup({category}) {
         window.location.href="/sportsacademy";
     }
     const gotoCoaches =()=>{
-        window.location.href="/coaches";
+        window.location.href="/sportscoach";
     }
 
     const gotoMentorshipProgram =()=>{
@@ -36,7 +37,7 @@ function Popup({category}) {
 
     return (
         <div className="popup" id="popup">
-            <div className="icon" onClick={closethisPopup}>
+            <div className="Cicon" onClick={closethisPopup}>
                 <CloseIcon />
             </div>
             {

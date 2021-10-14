@@ -1,0 +1,71 @@
+.eventsheading{
+    color: #1b1b1b !important;
+    margin: 20px !important;
+    width: 100% !important;
+}
+
+.events{
+    display: flex;
+    flex-wrap: wrap !important;
+}
+
+.eventsitem{
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  width: 280px !important;
+  padding: 20px !important;
+  border-radius: 10px !important;
+  margin: 20px !important;
+  box-shadow: -2px 4px 20px -6px rgba(0, 0, 0, 0.7) !important;
+}
+
+.eventimg{
+    width: 280px !important;
+    height: 200px !important;
+}
+
+.eventname, .eventdesc{
+    color: #1b1b1b !important;
+    margin: 10px 0px !important;
+}
+
+.eventdescr{
+    color: grey !important;
+}
+
+.eventsitem > .button{
+    margin-left: -10px !important;
+}
+
+.newbutton{
+    margin-left: 20px !important;
+    background-color: orangered !important;
+    color: white !important;
+}
+
+.form-textarea{
+    width: 100% !important;
+    height: 200px !important;
+    color: grey !important;
+    border: 1px solid grey !important;
+    outline: none !important;
+    font-size: 18px !important;
+    line-height: 1.5em !important;
+}
+
+.headingform{
+    color: grey !important;
+    font-weight: 400 !important;
+    margin: 5px 0px !important;
+    margin-top: 20px !important;
+}
+
+
+.muidialog{
+    z-index: 5000000 !important;
+}
+
+.muidialog::-webkit-scrollbar{
+      display: none !important;
+}

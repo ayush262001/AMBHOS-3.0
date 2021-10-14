@@ -5,6 +5,7 @@ import Footer from '../../Common/Footer/Footer';
 import SportsAcademyForm from './Sports/SportsAcademy/Form';
 import SportsTrainerForm from './Sports/SportsTrainer/Form';
 import SportsMentorForm from './Sports/SportsMentor/Form';
+import FitnessAcademyForm from './Fitness/FitnessAcademy/Form';
 import "./ServiceProvider.css";
 function ServiceProvider() {
 
@@ -136,6 +137,14 @@ function ServiceProvider() {
                                        <SportsMentorForm MainCategory={serviceCategory} SportsCategory={serviceCategoryTwo}/>
                                    )
                                }[serviceCategoryTwo]
+                           ),
+
+                           "fitness" :(
+                               {
+                                   "academy" :(
+                                        <FitnessAcademyForm MainCategory={serviceCategory} FitnessCategory={serviceCategoryTwo}/>
+                                   )
+                               }[serviceCategoryTwo]
                            )
                         }[serviceCategory]
                            
@@ -153,8 +162,9 @@ function ServiceProvider() {
                         <img src={element.logo} alt="" className="imagesingle" />
                         <h2 className="academyname">{element.academyName}</h2>
                         <p className="category">{element.category}</p>
-                        {element.verified ? <h3 className="verify">Active</h3> : <h3 className="pending">Pending</h3>}
+                        {element.verified ? <h3 className="verify">Verified</h3> : <h3 className="pending">Pending</h3>}
                         <Button className="buttonred">View page </Button>
+                        <Button className="buttonred">Delete Service </Button>
                     </div>
                 ))}
             </div>

@@ -182,7 +182,7 @@ function Academy() {
             <Footer />
         </div>
         {isPopup ? (<div className="popup">
-             <div className="icon" onClick={closethisPopup}>
+             <div className="Cicon" onClick={closethisPopup}>
                 <CloseIcon />
             </div>
             {filterOptions.map(element => (

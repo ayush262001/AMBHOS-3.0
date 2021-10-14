@@ -69,9 +69,9 @@ function Dance() {
             <Card  heading={`FITNESS`} imagetag={`/Fitness.jpg`} />
           </div>
 
-          <div className={Styles.container} onClick={changetoCare}>
+          {/* <div className={Styles.container} onClick={changetoCare}>
             <Card  heading={`CARE`} imagetag={`/ccc.jpg`} />
-          </div>
+          </div> */}
 
         </Carousel>
       </div>

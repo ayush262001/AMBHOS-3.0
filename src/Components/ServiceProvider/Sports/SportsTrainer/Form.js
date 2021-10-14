@@ -57,7 +57,6 @@ function Form({MainCategory, SportsCategory}) {
                             <input type="text" onChange={(e)=>setApplicantname(e.target.value)} className="input" placeholder="Enter your Applicant Name"/>
                             <input type="email" onChange={(e)=>setApplicantemail(e.target.value)} className="input" placeholder="Enter your Email Address"/>
                             <input type="tel" onChange={(e)=>setApplicantcontact(e.target.value)} className="input" placeholder="Enter your Contact Number"/>
-                            <input type="url" onChange={(e)=>setApplicantwebsite(e.target.value)} className="input" placeholder="Enter your Website Url"/>
                             <Button className="button" onClick={incrementNumber}>NEXT {`>`}</Button>
                        </div>
                     ),
@@ -66,16 +65,14 @@ function Form({MainCategory, SportsCategory}) {
                         <div className="form">
                             <input type="text" className="input" placeholder="Enter location of Academy" onClick={(e)=>setLocation(e.target.value)}/>
                             <input type="text" className="input" placeholder="Enter years of Experience" onClick={(e)=>setYearsofexperience(e.target.value)}/>
-                            <input type="text" className="input" placeholder="Prefered Age Group" onClick={(e)=>setAgeGroup(e.target.value)}/>
+                            <input type="text" className="input" placeholder="Prefered Age Group you train" onClick={(e)=>setAgeGroup(e.target.value)}/>
                             <Button className="button" onClick={incrementNumber}>NEXT {`>`}</Button>
                         </div>
                     ),
 
                     2 :(
                         <div className="form">
-                             <h3>Coaches and their expertise</h3>
-                            <textarea className="texthere" placeholder="Number of coaches and their level of expertise"  onClick={(e)=>setCoachesexpertise(e.target.value)}/>
-                            <h3>Describe your Infrastructure</h3>
+                            <h3>Describe your Infrastructure where you train</h3>
                             <textarea className="texthere" placeholder="Describe your Infrastructure"  onClick={(e)=>setInfrastructure(e.target.value)}/>
                             <h3>Training Style</h3>
                             <textarea className="texthere" placeholder="Tell us about your Training Style" onClick={(e)=>setTrainingStyle(e.target.value)} />
@@ -124,7 +121,7 @@ function Form({MainCategory, SportsCategory}) {
                         <div className="form">
                            <label className="label" for="idacademy"><UploadIcon className="icon" /></label>
                            <input className="imageupload" type="file" id="idacademy" />
-                           <p>Recognization cretificate / License of Trainer Center</p>
+                           <p>Recognization cretificate / License of Training center</p>
                            <Button className="button" onClick={incrementNumber}>NEXT {`>`}</Button>
                        </div>
                     ),

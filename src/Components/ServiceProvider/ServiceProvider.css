@@ -46,14 +46,17 @@
 
 .pending{
     color: red !important;
+    margin: 0px !important;
 }
 
 .verify{
     color: green !important;
+    margin: 0px !important;
 }
 .button{
     border: 2px solid grey !important;
     width: 300px !important;
+    margin-top: 10px !important;
 }
 
 .services-single > p{
@@ -87,6 +90,7 @@
     background-color: red !important;
     color: #fff !important;
     width: 100% !important;
+    margin-top: 5px !important;
 }
 
 .q{

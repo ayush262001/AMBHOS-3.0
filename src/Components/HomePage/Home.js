@@ -27,7 +27,6 @@ function Home() {
     return (
         <div>
           {login ? <HeaderAfter />: <Header/>}
-          <Bubble />
           <Banner />
           <Subscription />
           <Services />

@@ -12,6 +12,10 @@ function Form({MainCategory, SportsCategory}) {
         setNumber(number+1);
     }
 
+    const decrementNumber = ()=>{
+        setNumber(number-1);
+    }
+
     const[applicantname, setApplicantname] = useState("");
     const[applicantemail, setApplicantemail] = useState("");
     const[applicantcontact, setApplicantcontact] = useState("");
@@ -51,6 +55,7 @@ function Form({MainCategory, SportsCategory}) {
                             <input type="tel" onChange={(e)=>setApplicantcontact(e.target.value)} className="input" placeholder="Enter your Contact Number"/>
                             <input type="url" onChange={(e)=>setApplicantwebsite(e.target.value)} className="input" placeholder="Enter your Website Url"/>
                             <Button className="button" onClick={incrementNumber}>NEXT {`>`}</Button>
+                            <Button className="button" onClick={decrementNumber}>Back {`<`}</Button>
                        </div>
                     ),
 
@@ -58,11 +63,12 @@ function Form({MainCategory, SportsCategory}) {
                         <div className="form">
                             <input type="text" className="input" placeholder="Enter name of Academy" onClick={(e)=>setAcademyname(e.target.value)}/>
                             <input type="text" className="input" placeholder="Enter location of Academy" onClick={(e)=>setLocation(e.target.value)}/>
-                            <input type="text" className="input" placeholder="Enter years of Establishment of Academy" onClick={(e)=>setYearsofestablishment(e.target.value)}/>
+                            <input type="text" className="input" placeholder="Enter year of Establishment of Academy" onClick={(e)=>setYearsofestablishment(e.target.value)}/>
                             <input type="text" className="input" placeholder="Prefered Atheletic Type" onClick={(e)=>setAtheletictype(e.target.value)}/>
                             <input type="text" className="input" placeholder="Prefered Age Group" onClick={(e)=>setAgeGroup(e.target.value)}/>
                             <input type="text" className="input" placeholder="Enter Academy Timing" onClick={(e)=>setTiming(e.target.value)}/>
                             <Button className="button" onClick={incrementNumber}>NEXT {`>`}</Button>
+                            <Button className="button" onClick={decrementNumber}>Back {`<`}</Button>
                         </div>
                     ),
 
@@ -81,6 +87,7 @@ function Form({MainCategory, SportsCategory}) {
                             <h3>Terms and Conditions</h3>
                             <textarea className="texthere" placeholder="Tell us about your Terms and Condition of academy" onClick={(e)=>setTC(e.target.value)} />
                              <Button className="button" onClick={incrementNumber}>NEXT {`>`}</Button>
+                             <Button className="button" onClick={decrementNumber}>Back {`<`}</Button>
                         </div>
                     ),
 
@@ -90,6 +97,7 @@ function Form({MainCategory, SportsCategory}) {
                            <input className="imageupload" type="file" id="logo" />
                            <p>Upload Logo</p>
                            <Button className="button" onClick={incrementNumber}>NEXT {`>`}</Button>
+                           <Button className="button" onClick={decrementNumber}>Back {`<`}</Button>
                        </div>
                     ),
 
@@ -101,6 +109,7 @@ function Form({MainCategory, SportsCategory}) {
 
                            <textarea className="texthere" placeholder="enter the detail of award and rewards" onChange={(e)=> setAwardDetail(e.target.value)} />
                            <Button className="button" onClick={incrementNumber}>NEXT {`>`}</Button>
+                           <Button className="button" onClick={decrementNumber}>Back {`<`}</Button>
                        </div>
                     ),
 
@@ -110,6 +119,7 @@ function Form({MainCategory, SportsCategory}) {
                            <input className="imageupload" type="file" id="idcard" />
                            <p>Identification card of applicant</p>
                            <Button className="button" onClick={incrementNumber}>NEXT {`>`}</Button>
+                           <Button className="button" onClick={decrementNumber}>Back {`<`}</Button>
                        </div>
                     ),
 
@@ -119,6 +129,7 @@ function Form({MainCategory, SportsCategory}) {
                            <input className="imageupload" type="file" id="idacademy" />
                            <p>Recognization cretificate / License of Academy / Afficiation</p>
                            <Button className="button" onClick={incrementNumber}>NEXT {`>`}</Button>
+                           <Button className="button" onClick={decrementNumber}>Back {`<`}</Button>
                        </div>
                     ),
 
@@ -128,6 +139,7 @@ function Form({MainCategory, SportsCategory}) {
                            <input className="imageupload" type="file" id="coach" />
                            <p>Certificate of Coach</p>
                            <Button className="button" onClick={incrementNumber}>NEXT {`>`}</Button>
+                           <Button className="button" onClick={decrementNumber}>Back {`<`}</Button>
                        </div>
                     ),
 
@@ -137,6 +149,7 @@ function Form({MainCategory, SportsCategory}) {
                            <input className="imageupload" type="file" id="coach" />
                            <p>IMAGES OF ACADEMY</p>
                            <Button className="button" onClick={incrementNumber}>NEXT {`>`}</Button>
+                           <Button className="button" onClick={decrementNumber}>Back {`<`}</Button>
                        </div>
                     ),
 
@@ -183,7 +196,8 @@ function Form({MainCategory, SportsCategory}) {
                                         </div>
                                 </div>
                             </div> 
-                            <Button className="button" onClick={()=>{incrementNumber()}}>ADD PAYMENT</Button>   
+                            <Button className="button" onClick={()=>{incrementNumber()}}>ADD PAYMENT</Button>  
+                            <Button className="button" onClick={decrementNumber}>Back {`<`}</Button> 
                         </div>
                     ),
                     10 :(
@@ -194,6 +208,7 @@ function Form({MainCategory, SportsCategory}) {
                             <input type="text" className="input" placeholder="Enter your Name connected to Bank Account" onClick={(e)=>setAccountName(e.target.value)}/>
                             <input type="text" className="input" placeholder="Enter your Bank Account Number" onClick={(e)=>setAccountNumber(e.target.value)}/>
                             <input type="text" className="input" placeholder="Enter your IFSC code" onClick={(e)=>setIfsc(e.target.value)}/>
+                            <Button className="button" onClick={decrementNumber}>Back {`<`}</Button>
                             <Button className="button">Request to Publish {`>`}</Button>
                         </div>
                     )
