@@ -13,6 +13,10 @@ function header() {
           window.location.href="/dashboard";
      }
 
+     const gotoAllSubscription =()=>{
+          window.location.href="/subscription";
+     }
+
     return (
        <div className={Styles.Header_section}>
             <div className={Styles.Header_left}>
@@ -74,7 +78,9 @@ function header() {
                  <p className={Styles.Header_right_heading}><a className={Styles.anchortag} href="#event" className={Styles.anchortag}>EVENTS</a></p>
                        
                  <Button className={Styles.button_design} onClick={()=>gotoDashboard()}>Switch To Selling</Button>
+                 <div className={Styles.icondiv} onClick={gotoAllSubscription}>
                  <SubscriptionIcon className={Styles.searchButton}/>
+                 </div>
             </div>
        </div>
     )

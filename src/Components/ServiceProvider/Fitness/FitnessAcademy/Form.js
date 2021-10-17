@@ -29,6 +29,7 @@ function Form({MainCategory, FitnessCategory}) {
     const[preferedworkout, setPreferedworkout] = useState("");
     const[specialites, setSpecialites] = useState("");
     const[timing, setTiming] = useState([]);
+    const[services, setServices] = useState("");
     const[awardDetail, setAwardDetail] = useState("");
     const[selection, setSelection] = useState("");
     const[monthlyfee, setMonthlyFee] = useState(0);
@@ -61,21 +62,21 @@ function Form({MainCategory, FitnessCategory}) {
                 {
                     0 :(
                        <div className="form">
-                            <input type="text" onChange={(e)=>setApplicantname(e.target.value)} className="input" placeholder="Enter your Applicant Name"/>
-                            <input type="email" onChange={(e)=>setApplicantemail(e.target.value)} className="input" placeholder="Enter your Email Address"/>
-                            <input type="tel" onChange={(e)=>setApplicantcontact(e.target.value)} className="input" placeholder="Enter your Contact Number"/>
-                            <Button className="button" onClick={incrementNumber}>NEXT {`>`}</Button>
+                            <input type="text" value={applicantname} onChange={(e)=>setApplicantname(e.target.value)} className="input" placeholder="Enter your Applicant Name"/>
+                            <input type="email" value={applicantemail} onChange={(e)=>setApplicantemail(e.target.value)} className="input" placeholder="Enter your Email Address"/>
+                            <input type="tel" value={applicantcontact} onChange={(e)=>setApplicantcontact(e.target.value)} className="input" placeholder="Enter your Contact Number"/>
+                            <Button className="button"  onClick={incrementNumber}>NEXT {`>`}</Button>
                             <Button className="button" onClick={decrementNumber}>Back {`<`}</Button>
                        </div>
                     ),
 
                     1 :(
                         <div className="form">
-                            <input type="text" className="input" placeholder="Enter name of Academy" onChange={(e)=>setAcademyname(e.target.value)}/>
-                            <input type="text" className="input" placeholder="Enter location of Academy" onChange={(e)=>setLocation(e.target.value)}/>
-                            <input type="text" className="input" placeholder="Enter year of Establishment of Academy" onChange={(e)=>setYearsofestablishment(e.target.value)}/>
-                            <input type="text" className="input" placeholder="Parking Space Available" onChange={(e)=>setParkingSpace(e.target.value)}/>
-                            <input type="text" className="input" placeholder="No. of Volunteer" onChange={(e)=>setVolunteer(e.target.value)}/>
+                            <input type="text" className="input" placeholder="Enter name of Academy" value={academyname} onChange={(e)=>setAcademyname(e.target.value)}/>
+                            <input type="text" className="input" placeholder="Enter location of Academy" value={location} onChange={(e)=>setLocation(e.target.value)}/>
+                            <input type="text" className="input" placeholder="Enter year of Establishment of Academy" value={yearofestablishment} onChange={(e)=>setYearsofestablishment(e.target.value)}/>
+                            <input type="text" className="input" placeholder="Parking Space Available" value={parkingSpace} onChange={(e)=>setParkingSpace(e.target.value)}/>
+                            <input type="text" className="input" placeholder="No. of Volunteer" value={Volunteer} onChange={(e)=>setVolunteer(e.target.value)}/>
                             
                             <Button className="button" onClick={incrementNumber}>NEXT {`>`}</Button>
                             <Button className="button" onClick={decrementNumber}>Back {`<`}</Button>
@@ -85,21 +86,21 @@ function Form({MainCategory, FitnessCategory}) {
                     2 :(
                         <div className="form">
                             <h3>Trainer and their expertise</h3>
-                            <textarea className="texthere" placeholder="Number of Trainers and their level of expertise"  onChange={(e)=>setCoachesexpertise(e.target.value)}/>
+                            <textarea className="texthere" placeholder="Number of Trainers and their level of expertise" value={coachesexpertise}  onChange={(e)=>setCoachesexpertise(e.target.value)}/>
                             <h3>Describe your Infrastructure</h3>
-                            <textarea className="texthere" placeholder="Describe your Infrastructure"  onChange={(e)=>setInfrastructure(e.target.value)}/>
+                            <textarea className="texthere" placeholder="Describe your Infrastructure" value={infrastructure} onChange={(e)=>setInfrastructure(e.target.value)}/>
                             <h3>Prefered Workout</h3>
-                            <textarea className="texthere" placeholder="Tell us about your prefered workout" onChange={(e)=>setPreferedworkout(e.target.value)} />
+                            <textarea className="texthere" placeholder="Tell us about your prefered workout" value={preferedworkout} onChange={(e)=>setPreferedworkout(e.target.value)} />
                             <h3>Specialites</h3>
-                            <textarea className="texthere" placeholder="Tell us about your Specialites"  onChange={(e)=>setSpecialites(e.target.value)}/>
+                            <textarea className="texthere" placeholder="Tell us about your Specialites" value={specialites} onChange={(e)=>setSpecialites(e.target.value)}/>
                             <h3>Facilites / Services</h3>
-                            <textarea className="texthere" placeholder="Tell us about your Facilites & services"  onChange={(e)=>setSpecialites(e.target.value)}/>
+                            <textarea className="texthere" placeholder="Tell us about your Facilites & services" value={services} onChange={(e)=>setServices(e.target.value)}/>
                             <h3>Terms and Conditions</h3>
-                            <textarea className="texthere" placeholder="Tell us about your Terms and Condition of academy" onChange={(e)=>setTC(e.target.value)} />
+                            <textarea className="texthere" placeholder="Tell us about your Terms and Condition of academy" value={tc} onChange={(e)=>setTC(e.target.value)} />
                             <h3>DOs</h3>
-                            <textarea className="texthere" placeholder="Tell us about dos of academy" onChange={(e)=>setDO(e.target.value)} />
+                            <textarea className="texthere" placeholder="Tell us about dos of academy" value={DO} onChange={(e)=>setDO(e.target.value)} />
                             <h3>DON'Ts</h3>
-                            <textarea className="texthere" placeholder="Tell us about don'ts of academy" onChange={(e)=>setDONT(e.target.value)} />
+                            <textarea className="texthere" placeholder="Tell us about don'ts of academy"  value={DONT} onChange={(e)=>setDONT(e.target.value)} />
                              <Button className="button" onClick={incrementNumber}>NEXT {`>`}</Button>
                              <Button className="button" onClick={decrementNumber}>Back {`<`}</Button>
                         </div>
@@ -121,7 +122,7 @@ function Form({MainCategory, FitnessCategory}) {
                            <input className="imageupload" type="file" id="award" />
                            <p>Award and reward images</p>
 
-                           <textarea className="texthere" placeholder="enter the detail of award and rewards" onChange={(e)=> setAwardDetail(e.target.value)} />
+                           <textarea className="texthere" placeholder="enter the detail of award and rewards" value={awardDetail} onChange={(e)=> setAwardDetail(e.target.value)} />
                            <Button className="button" onClick={incrementNumber}>NEXT {`>`}</Button>
                            <Button className="button" onClick={decrementNumber}>Back {`<`}</Button>
                        </div>

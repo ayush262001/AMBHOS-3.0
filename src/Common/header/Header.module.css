@@ -14,6 +14,11 @@
     box-shadow: 0px 2px 0px rgba(122, 122, 122, 0.342);
 }
 
+.icondiv{
+    width: fit-content !important;
+    height: fit-content !important;
+}
+
 .anchortag{
     color: #464646;
     text-decoration: none;

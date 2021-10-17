@@ -8,6 +8,11 @@ import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import SubscriptionIcon from '@material-ui/icons/Subscriptions';
 
 function header() {
+
+       const gotoAllSubscription =()=>{
+          window.location.href="/subscription";
+     }
+
     return (
        <div className={Styles.Header_section}>
             <div className={Styles.Header_left}>
@@ -69,7 +74,9 @@ function header() {
                     
                  <Button>LOGIN</Button>   
                  <Button className={Styles.button_design}>SIGNUP</Button>
+                 <div className={Styles.icondiv} onClick={gotoAllSubscription}>
                  <SubscriptionIcon className={Styles.searchButton}/>
+                 </div>
             </div>
        </div>
     )

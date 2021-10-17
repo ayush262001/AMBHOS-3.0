@@ -12,6 +12,7 @@ import SFitnesstrainer from './Components/FitnessProfile/Trainer/AcademyProfile'
 import SportsCoach from './Components/SportsPage/Coaches/Academy';
 import FitnessAcademy from './Components/FitnessPage/Academy/Academy';
 import FitnessCoaches from './Components/FitnessPage/Coaches/Academy';
+import SubscriptionPage from './Components/SubscriptionPage/SubscriptionPage';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
               <Route path="/sportscoach" component={SportsCoach} />
               <Route path="/fitnessacademy" component={FitnessAcademy} />
               <Route path="/fitnesstrainer" component={FitnessCoaches} />
+              <Route path="/subscription" component={SubscriptionPage} />
         </Switch>
       </Router>
     </div>

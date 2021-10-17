@@ -1,0 +1,48 @@
+.subscription-heading{
+    color: #1b1b1b !important;
+    font-weight: 700 !important;
+    margin: 60px 20px!important;
+    width: 100% !important;
+}
+
+.subscription-ongoing{
+    margin: 20px !important;
+    width: 280px !important;
+    padding: 20px !important;
+    box-shadow: -2px 4px 20px -6px rgba(0, 0, 0, 0.7) !important;
+    border-radius: 13px !important;
+}
+
+.subscription-image{
+    width: 280px !important;
+    height: 200px !important;
+}
+
+.subscription-button{
+   width: 100% !important;
+   color: orangered !important;
+   border: 1px solid grey !important;
+   margin-top: 8px !important;
+}
+
+.subscription-location , .subscription-time{
+    color: grey !important;
+    font-weight: 600 !important;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+.subscription-time{
+    color: green !important;
+}
+
+.title{
+    color: rgba(0, 0, 0, 0.8) !important;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+.subscription-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap !important;
+}

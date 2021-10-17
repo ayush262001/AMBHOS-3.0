@@ -50,10 +50,9 @@ function Form({MainCategory, SportsCategory}) {
                 {
                     0 :(
                        <div className="form">
-                            <input type="text" onChange={(e)=>setApplicantname(e.target.value)} className="input" placeholder="Enter your Applicant Name"/>
-                            <input type="email" onChange={(e)=>setApplicantemail(e.target.value)} className="input" placeholder="Enter your Email Address"/>
-                            <input type="tel" onChange={(e)=>setApplicantcontact(e.target.value)} className="input" placeholder="Enter your Contact Number"/>
-                            <input type="url" onChange={(e)=>setApplicantwebsite(e.target.value)} className="input" placeholder="Enter your Website Url"/>
+                            <input type="text" value={applicantname} onChange={(e)=>setApplicantname(e.target.value)} className="input" placeholder="Enter your Applicant Name"/>
+                            <input type="email" value={applicantemail} onChange={(e)=>setApplicantemail(e.target.value)} className="input" placeholder="Enter your Email Address"/>
+                            <input type="tel" value={applicantcontact} onChange={(e)=>setApplicantcontact(e.target.value)} className="input" placeholder="Enter your Contact Number"/>
                             <Button className="button" onClick={incrementNumber}>NEXT {`>`}</Button>
                             <Button className="button" onClick={decrementNumber}>Back {`<`}</Button>
                        </div>
@@ -61,12 +60,12 @@ function Form({MainCategory, SportsCategory}) {
 
                     1 :(
                         <div className="form">
-                            <input type="text" className="input" placeholder="Enter name of Academy" onClick={(e)=>setAcademyname(e.target.value)}/>
-                            <input type="text" className="input" placeholder="Enter location of Academy" onClick={(e)=>setLocation(e.target.value)}/>
-                            <input type="text" className="input" placeholder="Enter year of Establishment of Academy" onClick={(e)=>setYearsofestablishment(e.target.value)}/>
-                            <input type="text" className="input" placeholder="Prefered Atheletic Type" onClick={(e)=>setAtheletictype(e.target.value)}/>
-                            <input type="text" className="input" placeholder="Prefered Age Group" onClick={(e)=>setAgeGroup(e.target.value)}/>
-                            <input type="text" className="input" placeholder="Enter Academy Timing" onClick={(e)=>setTiming(e.target.value)}/>
+                            <input type="text" className="input" placeholder="Enter name of Academy" value={academyname} onChange={(e)=>setAcademyname(e.target.value)}/>
+                            <input type="text" className="input" placeholder="Enter location of Academy" value={location} onChange={(e)=>setLocation(e.target.value)}/>
+                            <input type="text" className="input" placeholder="Enter year of Establishment of Academy" value={yearofestablishment} onChange={(e)=>setYearsofestablishment(e.target.value)}/>
+                            <input type="text" className="input" placeholder="Prefered Atheletic Type" value={atheletictype} onChange={(e)=>setAtheletictype(e.target.value)}/>
+                            <input type="text" className="input" placeholder="Prefered Age Group" value={agegroup} onChange={(e)=>setAgeGroup(e.target.value)}/>
+                            <input type="text" className="input" placeholder="Enter Academy Timing" value={timing} onChange={(e)=>setTiming(e.target.value)}/>
                             <Button className="button" onClick={incrementNumber}>NEXT {`>`}</Button>
                             <Button className="button" onClick={decrementNumber}>Back {`<`}</Button>
                         </div>
@@ -75,17 +74,17 @@ function Form({MainCategory, SportsCategory}) {
                     2 :(
                         <div className="form">
                             <h3>Coaches and their expertise</h3>
-                            <textarea className="texthere" placeholder="Number of coaches and their level of expertise"  onClick={(e)=>setCoachesexpertise(e.target.value)}/>
+                            <textarea className="texthere" placeholder="Number of coaches and their level of expertise" value={coachesexpertise} onChange={(e)=>setCoachesexpertise(e.target.value)}/>
                             <h3>Describe your Infrastructure</h3>
-                            <textarea className="texthere" placeholder="Describe your Infrastructure"  onClick={(e)=>setInfrastructure(e.target.value)}/>
+                            <textarea className="texthere" placeholder="Describe your Infrastructure" value={infrastructure} onChange={(e)=>setInfrastructure(e.target.value)}/>
                             <h3>Prefered Workout</h3>
-                            <textarea className="texthere" placeholder="Tell us about your prefered workout" onClick={(e)=>setPreferedworkout(e.target.value)} />
+                            <textarea className="texthere" placeholder="Tell us about your prefered workout" value={preferedworkout} onChange={(e)=>setPreferedworkout(e.target.value)} />
                             <h3>Alumni Structure</h3>
-                            <textarea className="texthere" placeholder="Tell us about your Alumni (if any)"  onClick={(e)=>setAlumni(e.target.value)}/>
+                            <textarea className="texthere" placeholder="Tell us about your Alumni (if any)" value={alumni} onChange={(e)=>setAlumni(e.target.value)}/>
                             <h3>Selection Procedure</h3>
-                            <textarea className="texthere" placeholder="Tell us about your Selection Procedure" onClick={(e)=>setSelection(e.target.value)} />
+                            <textarea className="texthere" placeholder="Tell us about your Selection Procedure" value={selection} onChange={(e)=>setSelection(e.target.value)} />
                             <h3>Terms and Conditions</h3>
-                            <textarea className="texthere" placeholder="Tell us about your Terms and Condition of academy" onClick={(e)=>setTC(e.target.value)} />
+                            <textarea className="texthere" placeholder="Tell us about your Terms and Condition of academy" value={tc} onChange={(e)=>setTC(e.target.value)} />
                              <Button className="button" onClick={incrementNumber}>NEXT {`>`}</Button>
                              <Button className="button" onClick={decrementNumber}>Back {`<`}</Button>
                         </div>
@@ -107,7 +106,7 @@ function Form({MainCategory, SportsCategory}) {
                            <input className="imageupload" type="file" id="award" />
                            <p>Award and reward images</p>
 
-                           <textarea className="texthere" placeholder="enter the detail of award and rewards" onChange={(e)=> setAwardDetail(e.target.value)} />
+                           <textarea className="texthere" placeholder="enter the detail of award and rewards" value={awardDetail} onChange={(e)=> setAwardDetail(e.target.value)} />
                            <Button className="button" onClick={incrementNumber}>NEXT {`>`}</Button>
                            <Button className="button" onClick={decrementNumber}>Back {`<`}</Button>
                        </div>
@@ -162,8 +161,8 @@ function Form({MainCategory, SportsCategory}) {
                                         <input type="number" className="price" placeholder="enter amount in RS" onChange={(e)=> setMonthlyFee(e.target.value)}/>
                                         <h2>Select the payment category</h2>
                                         <div className="r">
-                                        <div className="radio" onClick={()=>{setMonthlyType("trial")}}>Trial</div>
-                                        <div className="radio" onClick={()=>{setMonthlyType("subscription")}}>Subscription</div>
+                                        <div className="radio" onChange={()=>{setMonthlyType("trial")}}>Trial</div>
+                                        <div className="radio" onChange={()=>{setMonthlyType("subscription")}}>Subscription</div>
                                         </div>
                                         <div className="r">
                                             <img src="/money.png" alt="" />
@@ -175,8 +174,8 @@ function Form({MainCategory, SportsCategory}) {
                                         <input type="number" className="price" placeholder="enter amount in RS" onChange={(e)=>{setSixFee(e.target.value)}} />
                                         <h2>Select the payment category</h2>
                                         <div className="r">
-                                        <div className="radio" onClick={()=>{setSixType("trial")}}>Trial</div>
-                                        <div className="radio" onClick={()=>{setSixType("subscription")}}>Subscription</div>
+                                        <div className="radio" onChange={()=>{setSixType("trial")}}>Trial</div>
+                                        <div className="radio" onChange={()=>{setSixType("subscription")}}>Subscription</div>
                                         </div>
                                         <div className="r">
                                             <img src="/money.png" alt="" />
@@ -188,8 +187,8 @@ function Form({MainCategory, SportsCategory}) {
                                         <input type="number" className="price" placeholder="enter amount in RS" onChange={(e)=> setTwelveFee(e.target.value)}/>
                                         <h2>Select the payment category</h2>
                                         <div className="r">
-                                        <div className="radio" onClick={()=>setTwelveType("trial")}>Trial</div>
-                                        <div className="radio" onClick={()=>setTwelveType("subscription")}>Subscription</div>
+                                        <div className="radio" onChange={()=>setTwelveType("trial")}>Trial</div>
+                                        <div className="radio" onChange={()=>setTwelveType("subscription")}>Subscription</div>
                                         </div>
                                         <div className="r">
                                             <img src="/money.png" alt="" />
@@ -203,11 +202,11 @@ function Form({MainCategory, SportsCategory}) {
                     10 :(
                         <div className="form">
                             <h2>/**These credential information will not be shared with anyone **/</h2>
-                            <input type="text" className="input" placeholder="Enter your GST number" onClick={(e)=>setGst(e.target.value)}/>
-                            <input type="text" className="input" placeholder="Enter your PAN number" onClick={(e)=>setPan(e.target.value)}/>
-                            <input type="text" className="input" placeholder="Enter your Name connected to Bank Account" onClick={(e)=>setAccountName(e.target.value)}/>
-                            <input type="text" className="input" placeholder="Enter your Bank Account Number" onClick={(e)=>setAccountNumber(e.target.value)}/>
-                            <input type="text" className="input" placeholder="Enter your IFSC code" onClick={(e)=>setIfsc(e.target.value)}/>
+                            <input type="text" className="input" placeholder="Enter your GST number" value={gst} onChange={(e)=>setGst(e.target.value)}/>
+                            <input type="text" className="input" placeholder="Enter your PAN number" value={pan} onChange={(e)=>setPan(e.target.value)}/>
+                            <input type="text" className="input" placeholder="Enter your Name connected to Bank Account" value={accountName} onChange={(e)=>setAccountName(e.target.value)}/>
+                            <input type="text" className="input" placeholder="Enter your Bank Account Number" value={accountNumber} onChange={(e)=>setAccountNumber(e.target.value)}/>
+                            <input type="text" className="input" placeholder="Enter your IFSC code" value={ifsc} onChange={(e)=>setIfsc(e.target.value)}/>
                             <Button className="button" onClick={decrementNumber}>Back {`<`}</Button>
                             <Button className="button">Request to Publish {`>`}</Button>
                         </div>

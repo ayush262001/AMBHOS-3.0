@@ -3,7 +3,7 @@ import './Events.css';
 import {Button} from '@material-ui/core';
 import Popup from './EventCreatePopup';
 function Events() {
-    const [isuser, setIsUser] = useState(true);
+    const [isuser, setIsUser] = useState(false);
     return (
         <div className="events">
             {isuser ? <></>: <Popup  />}

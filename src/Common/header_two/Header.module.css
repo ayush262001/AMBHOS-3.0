@@ -26,6 +26,11 @@
     padding: 5px;
 }
 
+.icondiv{
+    width: fit-content !important;
+    height: fit-content !important;
+}
+
 .Header_right
 {
     display: flex;
