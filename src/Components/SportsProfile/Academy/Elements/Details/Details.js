@@ -5,6 +5,7 @@ import {Avatar, Button} from '@material-ui/core';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import {Add} from '@material-ui/icons';
+import StarIcon from '@material-ui/icons/Star';
 
 const responsive = {
   superLargeDesktop: {
@@ -27,6 +28,51 @@ const responsive = {
 };
 
 function Details() {
+
+    const[rating, setRating] = useState(0);
+
+    function Ratingstar() {
+        return (
+            <div className="stars">
+                {{
+
+                    0: (<><StarIcon onClick={()=>setRating(1)} style={{ color: "grey" }} />
+                    <StarIcon onClick={()=>setRating(2)} style={{ color: "grey" }} />
+                   <StarIcon onClick={()=>setRating(3)} style={{ color: "grey" }} />
+                   <StarIcon onClick={()=>setRating(4)} style={{ color: "grey" }} />
+                   <StarIcon onClick={()=>setRating(5)} style={{ color: "grey" }} />
+                        </>), 
+
+                    1: (<><StarIcon onClick={()=>setRating(1)} style={{ color: "gold" }} />
+                         <StarIcon onClick={()=>setRating(2)} style={{ color: "grey" }} />
+                        <StarIcon onClick={()=>setRating(3)} style={{ color: "grey" }} />
+                        <StarIcon onClick={()=>setRating(4)} style={{ color: "grey" }} />
+                        <StarIcon onClick={()=>setRating(5)} style={{ color: "grey" }} /></>),
+
+                    2: (<><StarIcon onClick={()=>setRating(1)} style={{ color: "gold" }} /><StarIcon onClick={()=>setRating(2)} style={{ color: "gold" }} />
+                        <StarIcon onClick={()=>setRating(3)} style={{ color: "grey" }} />
+                        <StarIcon onClick={()=>setRating(4)} style={{ color: "grey" }} />
+                        <StarIcon onClick={()=>setRating(5)} style={{ color: "grey" }} /></>),
+
+                    3: (<><StarIcon onClick={()=>setRating(1)} style={{ color: "gold" }} /><StarIcon onClick={()=>setRating(2)} style={{ color: "gold" }} />
+                        <StarIcon onClick={()=>setRating(3)} style={{ color: "gold" }} />
+                        <StarIcon onClick={()=>setRating(4)} style={{ color: "grey" }} />
+                        <StarIcon onClick={()=>setRating(5)} style={{ color: "grey" }} /></>),
+
+                    4: (<><StarIcon onClick={()=>setRating(1)} style={{ color: "gold" }} /><StarIcon onClick={()=>setRating(2)} style={{ color: "gold" }} />
+                        <StarIcon onClick={()=>setRating(3)} style={{ color: "gold" }} />
+                        <StarIcon onClick={()=>setRating(4)} style={{ color: "gold" }} />
+                        <StarIcon onClick={()=>setRating(5)} style={{ color: "grey" }} /></>),
+
+                    5: (<><StarIcon onClick={()=>setRating(1)} style={{ color: "gold" }} /><StarIcon onClick={()=>setRating(2)} style={{ color: "gold" }} />
+                        <StarIcon onClick={()=>setRating(3)} style={{ color: "gold" }} />
+                        <StarIcon onClick={()=>setRating(4)} style={{ color: "gold" }} />
+                        <StarIcon onClick={()=>setRating(5)} style={{ color: "gold" }} /></>)
+                }[rating]}
+            </div>
+        )
+    }
+
     const [isUser, setUser] = useState(true);
     const [editdetails, setEditDetails] = useState(true);
     const[review, setReview] = useState("");
@@ -147,6 +193,8 @@ function Details() {
 
                 {isUser ? <Button className="edit-button">BOOK NOW</Button>: (<><Button className="edit-button" onClick={() =>setEditDetails(false)}>EDIT PAGE</Button>
                 <Button className="edit-button">ALL SUBSCRIBERS</Button></>)}
+
+                <br/><br/><Ratingstar />
                 
                 {isUser ? (<><br/><br/>
                 <label className="label" for="givereview">WRITE A REVIEW</label> <br/><br/>

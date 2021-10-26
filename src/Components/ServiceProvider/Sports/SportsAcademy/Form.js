@@ -22,7 +22,7 @@ function Form({MainCategory, SportsCategory}) {
     const[applicantwebsite, setApplicantwebsite] = useState("");
     const[academyname, setAcademyname] = useState("");
     const[location, setLocation] = useState("");
-    const[yearsofestablishment, setYearsofestablishment]= useState("");
+    const[yearofestablishment, setYearsofestablishment]= useState("");
     const[atheletictype, setAtheletictype] = useState("");
     const[agegroup, setAgeGroup] = useState("");
     const[coachesexpertise, setCoachesexpertise] = useState("");

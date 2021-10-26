@@ -78,7 +78,7 @@ function Academy() {
         academyName: "FC GOA CITY",
         academyLocation : "SGD Stadium, GOA",
         verified: true,
-        rating: "4"
+        rating: "1"
     }]
 
 
@@ -186,7 +186,7 @@ function Academy() {
                 <CloseIcon />
             </div>
             {filterOptions.map(element => (
-                <div className="itemS" onClick={()=>{setCategoryFiltered(element.category)}} ><h4>{element.category}</h4></div>
+                <div className="itemSS" onClick={()=>{setCategoryFiltered(element.category)}} ><h4>{element.category}</h4></div>
             ))}
             </div>): <></>}
         </>

@@ -126,7 +126,7 @@ function Academy() {
                 <CloseIcon />
             </div>
             {filterOptions.map(element => (
-                <div className="itemS" onClick={()=>{setCategoryFiltered(element.category)}} ><h4>{element.category}</h4></div>
+                <div className="itemSS" onClick={()=>{setCategoryFiltered(element.category)}} ><h4>{element.category}</h4></div>
             ))}
             </div>): <></>}
         </>

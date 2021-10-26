@@ -21,7 +21,7 @@ function Form({MainCategory, FitnessCategory}) {
     const[applicantwebsite, setApplicantwebsite] = useState("");
     const[academyname, setAcademyname] = useState("");
     const[location, setLocation] = useState("");
-    const[yearsofestablishment, setYearsofestablishment]= useState("");
+    const[yearofestablishment, setYearsofestablishment]= useState("");
     const[parkingSpace, setParkingSpace] = useState("")
     const[Volunteer, setVolunteer] = useState("");
     const[coachesexpertise, setCoachesexpertise] = useState("");

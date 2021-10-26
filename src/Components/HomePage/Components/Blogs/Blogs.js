@@ -4,6 +4,7 @@ import Layout from './Layout/Layout';
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import {BlogApi} from '../../../../Common/BlogsTable';
 
 const responsive = {
   superLargeDesktop: {
@@ -33,27 +34,11 @@ function Blog() {
             <h1 className={Styles.heading}>Blogs</h1>
            
             <Carousel responsive={responsive}>
-                <div className={Styles.item}>
-                    <Layout imagetag={`/Blog.jpg`} title={`5 Days Yoga Can Change Your Life`} dateAndTime={`26 Jan 2021 at 12:00 pm`} para={`Topic Brief Zumba dance is a burn calories and build endurance..`} />
-                </div>
-                <div className={Styles.item}>
-                    <Layout imagetag={`/Blog.jpg`} title={`5 Days Yoga Can Change Your Life`} dateAndTime={`26 Jan 2021 at 12:00 pm`} para={`Topic Brief Zumba dance is a burn calories and build endurance..`} />
-                </div>
-                <div className={Styles.item}>
-                    <Layout imagetag={`/Blog.jpg`} title={`5 Days Yoga Can Change Your Life`} dateAndTime={`26 Jan 2021 at 12:00 pm`} para={`Topic Brief Zumba dance is a burn calories and build endurance..`} />
-                </div>
-                <div className={Styles.item}>
-                    <Layout imagetag={`/Blog.jpg`} title={`5 Days Yoga Can Change Your Life`} dateAndTime={`26 Jan 2021 at 12:00 pm`} para={`Topic Brief Zumba dance is a burn calories and build endurance..`} />
-                </div>
-                <div className={Styles.item}>
-                    <Layout imagetag={`/Blog.jpg`} title={`5 Days Yoga Can Change Your Life`} dateAndTime={`26 Jan 2021 at 12:00 pm`} para={`Topic Brief Zumba dance is a burn calories and build endurance..`} />
-                </div>
-                <div className={Styles.item}>
-                    <Layout imagetag={`/Blog.jpg`} title={`5 Days Yoga Can Change Your Life`} dateAndTime={`26 Jan 2021 at 12:00 pm`} para={`Topic Brief Zumba dance is a burn calories and build endurance..`} />
-                </div>
-                <div className={Styles.item}>
-                    <Layout imagetag={`/Blog.jpg`} title={`5 Days Yoga Can Change Your Life`} dateAndTime={`26 Jan 2021 at 12:00 pm`} para={`Topic Brief Zumba dance is a burn calories and build endurance..`} />
-                </div>
+                {BlogApi.map(ele=>(
+                    <div className={Styles.item}>
+                    <Layout imagetag={ele.image} title={`${ele.title.substring(0,30)}...`} dateAndTime={ele.date} para={ele.description.substring(0,200)} link={ele.link} />
+                    </div>
+                ))}
             </Carousel>
         </div>
     )

@@ -41,6 +41,15 @@
     justify-content: center;
 }
 
+.instruction{
+    color: blue !important;
+    text-decoration: underline !important;
+    text-transform: uppercase !important;
+    font-weight: 500 !important;
+    font-size: 1.2em !important;
+    font-family: "poppins" !important;
+}
+
 @media (max-width: 1100px)
 {
     .left{

@@ -28,18 +28,15 @@ function Home() {
         <div>
           {login ? <HeaderAfter />: <Header/>}
           <Banner />
-          <Subscription />
           <Services />
           <Dance />
           <BannerTwo />
           <Event />
           <Care />
-          <ConsultFinal />
           <Client />
           <Trending />
           <Testimonials />
           <Blogs />
-          <Application />
           <Upcoming />
           <Footer />
         </div>

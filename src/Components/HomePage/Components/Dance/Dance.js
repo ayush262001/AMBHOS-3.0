@@ -30,6 +30,7 @@ function Dance() {
 
   const [Category, setCategory] = useState("");
   const [showPopup, setPopup] = useState(false);
+  const[link, setLink] = useState("");
   const [title, setTitle] = useState("SPORTS");
   const [para, setPara] = useState("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet ultricies elit non congue. Fusce sit amet dapibus orci, et blan dolor. Nunc posuere diam dolor, a blandit od dictum sit amet. Etiam vitae euismod ante. Integer dict.");
 
@@ -52,9 +53,13 @@ function Dance() {
 
       {/*for left section with content*/}
       <div className={Styles.left}>
-        <h2 className={Styles.title}>{title}</h2>
-        <p className={Styles.para}>{para}</p>
-        <Button className={Styles.explore}>Explore</Button>
+        <h2 className={Styles.title}>Ambhos<br/> The spirit to heal, The spirit to care</h2>
+        <p className={Styles.para}>
+We connect people to the best fitness and sports services.
+Book your subscription now.
+Upcoming services- Healthcare.
+</p>
+        <p className={Styles.instruction}>Click on respective box to visit page</p>
       </div>
 
       {/*for right section with carousel effect */}
@@ -69,9 +74,9 @@ function Dance() {
             <Card  heading={`FITNESS`} imagetag={`/Fitness.jpg`} />
           </div>
 
-          {/* <div className={Styles.container} onClick={changetoCare}>
+          <div className={Styles.container} onClick={changetoCare}>
             <Card  heading={`CARE`} imagetag={`/ccc.jpg`} />
-          </div> */}
+          </div> 
 
         </Carousel>
       </div>

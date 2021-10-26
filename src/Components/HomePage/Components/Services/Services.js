@@ -12,10 +12,6 @@ function Services() {
             <p className={Styles.para}>OUR SERVICES</p>
             <div className={Styles.innerdiv}>
                  <h1 className={Styles.heading}>Services We Offer</h1>
-                 <div className={Styles.filtersection}>
-                     <NotesSharpIcon className={Styles.icon} />
-                     <p>FILTER</p>
-                 </div>
             </div>
             </div>
 
