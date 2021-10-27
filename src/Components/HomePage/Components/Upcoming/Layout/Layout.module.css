@@ -6,6 +6,18 @@
    margin-bottom:5px;
 }
 
+.imagesm{
+   width: 150px !important;
+   height: 150px !important;
+   object-fit: cover !important;
+   border: 1px solid #1b1b1b !important;
+   border-radius: 10px !important;
+}
+
+.link{
+   text-decoration: none !important;
+}
+
 .para{
    font-family: Montserrat Alternates;
    font-weight: 400;
@@ -43,11 +55,11 @@
 @media(max-width:600px){
     .layout{
         display: block;
-        width: 100%;
-        margin: 10px 0px;
+        width: calc(100% - 40px) !important;
+        margin: 10px 0px !important;
     }
 
     .right{
-        width: 100%;
+      width: 100% !important;
     }
 }

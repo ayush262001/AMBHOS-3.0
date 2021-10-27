@@ -82,9 +82,9 @@ function ServiceProvider() {
                         <div className="q">
                             <h3 className="question">SELECT YOUR CATEGORY</h3>
                             <div className="items">
-                                <div className="itemS" onClick={() => setCat("fitness")}><img src="/gymnew.png" className="image" /> <h4>FITNESS</h4></div>
-                                <div className="itemS" onClick={() => setCat("sports")}><img src="/gymnew.png" className="image" /> <h4>SPORTS</h4></div>
-                                <div className="itemS" onClick={() => setCat("care")}><img src="/gymnew.png" className="image" /> <h4>CARE</h4></div>
+                                <div className="itemS" onClick={() => setCat("fitness")}><img src="/fitnessicon.png" className="image" /> <h4>FITNESS</h4></div>
+                                <div className="itemS" onClick={() => setCat("sports")}><img src="/sportsicon.png" className="image" /> <h4>SPORTS</h4></div>
+                                <div className="itemS" onClick={() => setCat("care")}><img src="/healthicon.png" className="image" /> <h4>CARE</h4></div>
                             </div>
                         </div>
                     ),
@@ -95,8 +95,8 @@ function ServiceProvider() {
                                 <div className="q">
                                     <h3 className="question">SELECT YOUR CATEGORY</h3>
                                     <div className="items">
-                                        <div className="itemS" onClick={() => setCatTwo("academy")}><img src="/gymnew.png" className="image" /> <h4>ACADEMY</h4></div>
-                                        <div className="itemS" onClick={() => setCatTwo("trainer")}><img src="/gymnew.png" className="image" /> <h4>PERSONAL TRAINER</h4></div>
+                                        <div className="itemS" onClick={() => setCatTwo("academy")}><img src="/academyicon.png" className="image" /> <h4>ACADEMY</h4></div>
+                                        <div className="itemS" onClick={() => setCatTwo("trainer")}><img src="/trainericon.png" className="image" /> <h4>PERSONAL TRAINER</h4></div>
                                     </div>
                                 </div>
                             ),
@@ -104,9 +104,9 @@ function ServiceProvider() {
                                 <div className="q">
                                     <h3 className="question">SELECT YOUR CATEGORY</h3>
                                     <div className="items">
-                                        <div className="itemS" onClick={() => setCatTwo("academy")}><img src="/gymnew.png" className="image" /> <h4>ACADEMY</h4></div>
-                                        <div className="itemS" onClick={() => setCatTwo("trainer")}><img src="/gymnew.png" className="image" /> <h4>TRAINER</h4></div>
-                                        <div className="itemS" onClick={() => setCatTwo("mentor")}><img src="/gymnew.png" className="image" /> <h4>MENTOR</h4></div>
+                                        <div className="itemS" onClick={() => setCatTwo("academy")}><img src="/academyicon.png" className="image" /> <h4>ACADEMY</h4></div>
+                                        <div className="itemS" onClick={() => setCatTwo("trainer")}><img src="/trainericon.png" className="image" /> <h4>TRAINER</h4></div>
+                                        <div className="itemS" onClick={() => setCatTwo("mentor")}><img src="/mentoricon.png" className="image" /> <h4>MENTOR</h4></div>
                                     </div>
                                 </div>
                             ),
@@ -114,8 +114,8 @@ function ServiceProvider() {
                                 <div className="q">
                                     <h3 className="question">SELECT YOUR CATEGORY</h3>
                                     <div className="items">
-                                        <div className="itemS" onClick={() => setCatTwo("doctor")}><img src="/gymnew.png" className="image" /> <h4>DOCTOR</h4></div>
-                                        <div className="itemS" onClick={() => setCatTwo("hospital")}><img src="/gymnew.png" className="image" /> <h4>HOSPITAL</h4></div>
+                                        <div className="itemS" onClick={() => setCatTwo("doctor")}><img src="/healthicon.png" className="image" /> <h4>DOCTOR</h4></div>
+                                        <div className="itemS" onClick={() => setCatTwo("hospital")}><img src="/healthicon.png" className="image" /> <h4>HOSPITAL</h4></div>
                                     </div>
                                 </div>
                             )

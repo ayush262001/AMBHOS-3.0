@@ -56,6 +56,12 @@
     width: fit-content;
 }
 
+.imgsmall{
+    width: 300px !important;
+    height: 300px !important;
+    object-fit: cover !important;
+}
+
 @media(max-width: 1150px)
 {
     .design{

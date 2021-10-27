@@ -9,7 +9,7 @@ function ItemCare({imglink, title, linkTag, link}) {
                     <img src={imglink} className={Styles.image}/>
                     <div className={Styles.addspace}>
                     <h2 className={Styles.title}>{title}</h2>
-                    <h3 className={Styles.link}><a href="" className={Styles.anchortag}>{linkTag}<ChevronRightIcon className={Styles.icon} /></a></h3>
+                    <h3 className={Styles.link}><a href={link} className={Styles.anchortag}>{linkTag}<ChevronRightIcon className={Styles.icon} /></a></h3>
                     </div>
              </div>            
         </div>

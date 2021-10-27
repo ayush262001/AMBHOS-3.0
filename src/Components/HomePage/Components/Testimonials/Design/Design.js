@@ -4,7 +4,7 @@ function Design({imagetag, paragraph, name, designation}) {
     return (
         <div className={Styles.design}>
             <div className={Styles.left}>
-                <img src={imagetag} alt="" />
+                <img src={imagetag} className={Styles.imgsmall} alt="" />
                 <img src="/rectangle.png" alt="" className={Styles.rectangle} />
             </div>
             <div className={Styles.right}>

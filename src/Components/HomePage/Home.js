@@ -33,7 +33,6 @@ function Home() {
           <BannerTwo />
           <Event />
           <Care />
-          <Client />
           <Trending />
           <Testimonials />
           <Blogs />

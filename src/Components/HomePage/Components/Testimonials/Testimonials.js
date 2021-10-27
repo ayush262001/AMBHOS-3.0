@@ -4,6 +4,7 @@ import Design from './Design/Design';
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import {TestimonialApi} from '../../../../Common/TestimonialApi.js';
 
 const responsive = {
     superLargeDesktop: {
@@ -34,37 +35,14 @@ function Testimonials() {
             <div className={Styles.container}>
 
             <Carousel responsive={responsive}>
-            <div className={Styles.actualdiv}>
-                <Design imagetag={`/person.jpg`} paragraph={`We at Sprinteriors wanted our website to be futuristic, easy to understand, user 
-                friendly and service oriented giving our customers all the handy requisites in designing their dream project online just the 
-                way they visualized it. Thinkbar has beautifully malgamated our proficiency in a simple, elegant and totally integrated. 
-                amalgamated our proficiency in a simple, elegant and totally integrated.`}
-                   name={`Ayush Gour`} designation={`Co-founder of Ambhos.pvt.ltd`} />
-                </div>
+            
+                {TestimonialApi.map(ele=>(
+                  <div className={Styles.actualdiv}>
+                  <Design imagetag={ele.image} paragraph={ele.description}
+                     name={ele.name} designation={ele.designation} />
+                  </div>
+                ))}
 
-                <div className={Styles.actualdiv}>
-                <Design imagetag={`/person.jpg`} paragraph={`We at Sprinteriors wanted our website to be futuristic, easy to understand, user 
-                friendly and service oriented giving our customers all the handy requisites in designing their dream project online just the 
-                way they visualized it. Thinkbar has beautifully malgamated our proficiency in a simple, elegant and totally integrated. 
-                amalgamated our proficiency in a simple, elegant and totally integrated.`}
-                   name={`Ayush Gour`} designation={`Co-founder of Ambhos.pvt.ltd`} />
-                </div>
-
-                <div className={Styles.actualdiv}>
-                <Design imagetag={`/person.jpg`} paragraph={`We at Sprinteriors wanted our website to be futuristic, easy to understand, user 
-                friendly and service oriented giving our customers all the handy requisites in designing their dream project online just the 
-                way they visualized it. Thinkbar has beautifully malgamated our proficiency in a simple, elegant and totally integrated. 
-                amalgamated our proficiency in a simple, elegant and totally integrated.`}
-                   name={`Ayush Gour`} designation={`Co-founder of Ambhos.pvt.ltd`} />
-                </div>
-
-                <div className={Styles.actualdiv}>
-                <Design imagetag={`/person.jpg`} paragraph={`We at Sprinteriors wanted our website to be futuristic, easy to understand, user 
-                friendly and service oriented giving our customers all the handy requisites in designing their dream project online just the 
-                way they visualized it. Thinkbar has beautifully malgamated our proficiency in a simple, elegant and totally integrated. 
-                amalgamated our proficiency in a simple, elegant and totally integrated.`}
-                   name={`Ayush Gour`} designation={`Co-founder of Ambhos.pvt.ltd`} />
-                </div>
             </Carousel>
             </div>
             

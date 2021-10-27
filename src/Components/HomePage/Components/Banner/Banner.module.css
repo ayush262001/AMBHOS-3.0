@@ -8,3 +8,14 @@
     width: 100%;
     height: 578px;
 }
+
+@media(max-width:767px){
+     .bannerImage{
+        height: 300px !important;
+     }
+
+     .banner
+     {
+        height: 300px !important;
+     }
+}
