@@ -31,31 +31,24 @@ function Trending() {
         <div className={Styles.trending}>
             <p className={Styles.para}>Visit Our</p>
             <h1 className={Styles.heading}>Trending Topics</h1>
+            
 
             <Carousel responsive={responsive}>
                 <div className={Styles.alignment}>
-                <Layout imgtag={`/Trending.jpg`} title={`Karate`}
-                  description={`Zumba dance is a full body- workout. It will help you burn calories and build endurance..`}/>
+                <Layout imgtag={`/Trending.jpg`} title={`Pooja Chaurushi`} link={`https://www.youtube.com/embed/8w03xpav5ys`}
+                  description={`Pooja Chaurushi | Golden Girl | National Champion | South Asian Champion | Triathlon | Real Hero |
+                  Pooja Chaurushi | Golden Girl | National Champion | South Asian Champion | Triathlon | Real Hero..`}/>
                 </div>
 
                 <div className={Styles.alignment}>
-                <Layout imgtag={`/Trending.jpg`} title={`Karate`}
-                  description={`Zumba dance is a full body- workout. It will help you burn calories and build endurance..`}/>
+                <Layout imgtag={`/Trending.jpg`} title={`Dr Sunita Godara`} link={`https://www.youtube.com/embed/TRKavaqQ_3Y`}
+                  description={`Marathon Queen | Dr Sunita Godara | First women Asian Champion - 1992 | Real Hero | Ambhos
+                  Marathon Queen | Dr Sunita Godara | First women Asian Champion - 1992 | Real Hero | Ambhos..`}/>
                 </div>
 
                 <div className={Styles.alignment}>
-                <Layout imgtag={`/Trending.jpg`} title={`Karate`}
-                  description={`Zumba dance is a full body- workout. It will help you burn calories and build endurance..`}/>
-                </div>
-
-                <div className={Styles.alignment}>
-                <Layout imgtag={`/Trending.jpg`} title={`Karate`}
-                  description={`Zumba dance is a full body- workout. It will help you burn calories and build endurance..`}/>
-                </div>
-
-                <div className={Styles.alignment}>
-                <Layout imgtag={`/Trending.jpg`} title={`Karate`}
-                  description={`Zumba dance is a full body- workout. It will help you burn calories and build endurance..`}/>
+                <Layout imgtag={`/Trending.jpg`} title={`Pragnya Mohan`} link={`https://www.youtube.com/embed/2CQly2lWVlo`}
+                  description={`Pragnya Mohan| First Indian who represented country at triathlon World Cup| Triathlete | Real Hero |..`}/>
                 </div>
             </Carousel>
         </div>

@@ -19,6 +19,7 @@ import Testimonials from './Components/Testimonials/Testimonials';
 import Blogs from './Components/Blogs/Blogs';
 import Application from './Components/Applications/Application';
 import Upcoming from './Components/Upcoming/Upcoming';
+import HeaderMobile from '../../Common/HeaderMobile/HeaderMobile';
 
 
 function Home() {
@@ -27,6 +28,7 @@ function Home() {
     return (
         <div>
           {login ? <HeaderAfter />: <Header/>}
+          <HeaderMobile />
           <Banner />
           <Services />
           <Dance />

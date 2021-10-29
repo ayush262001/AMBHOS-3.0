@@ -36,7 +36,7 @@ function Blog() {
             <Carousel responsive={responsive}>
                 {BlogApi.map(ele=>(
                     <div className={Styles.item}>
-                    <Layout imagetag={ele.image} title={`${ele.title.substring(0,30)}...`} dateAndTime={ele.date} para={ele.description.substring(0,200)} link={ele.link} />
+                    <Layout imagetag={ele.image} title={`${ele.title.substring(0,20)}...`} dateAndTime={ele.date} para={ele.description.substring(0,200)} link={ele.link} />
                     </div>
                 ))}
             </Carousel>

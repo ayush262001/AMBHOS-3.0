@@ -1,4 +1,4 @@
-.Header_section{
+.Headersection{
     font-family: Montserrat Alternates;
     color: #464646;
     display: flex;
@@ -114,36 +114,14 @@
         visibility: collapse;
         display:none;
     }
-    .Header_section
+    .Headersection
     {
         justify-content:center;
     }
 }
-
-@media(max-width: 650px)
+@media(max-width: 750px)
 {
-    .Header_right_heading_dropdown
-    {
-        display:none;
-        visibility:collapse;
-    }
-}
-
-@media(max-width:550px)
-{
-    
-    .Header_right_heading
-    {
-        visibility: collapse;
-        display:none;
-    }
-
-    .Header_right_heading_dropdown_mobile
-    {
-        display: flex;
-        visibility:visible;
-        align-items:center;
-        justify-content:center;
-        margin: 0px 20px;
+    .Headersection{
+        display: none !important;
     }
 }

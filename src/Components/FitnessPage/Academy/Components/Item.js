@@ -3,7 +3,7 @@ import {Button} from '@material-ui/core';
 import StarIcon from '@material-ui/icons/Star';
 import './Item.css';
 
-function Item({logo, academyName, academyLocation, verified, rating}) {
+function Item({logo, academyName, academyLocation, verified, rating, link}) {
 
     function Ratingstar() {
         return (
@@ -38,6 +38,11 @@ function Item({logo, academyName, academyLocation, verified, rating}) {
         )
     }
 
+    const gotopage =()=>{
+        console.log(link);
+        window.location.href=`${link}`
+    }
+
     return (
         <div className="item">
             <img src={logo} className="image-logo" />
@@ -47,7 +52,7 @@ function Item({logo, academyName, academyLocation, verified, rating}) {
             <div className="bottom">
                 <h4 className="rating"><Ratingstar/></h4>
             </div>
-            <Button className="button_">VISIT NOW</Button>
+            <Button className="button_" onClick={()=>gotopage()}>VISIT NOW</Button>
         </div>
     )
 }

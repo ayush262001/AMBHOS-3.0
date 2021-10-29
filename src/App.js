@@ -13,6 +13,8 @@ import SportsCoach from './Components/SportsPage/Coaches/Academy';
 import FitnessAcademy from './Components/FitnessPage/Academy/Academy';
 import FitnessCoaches from './Components/FitnessPage/Coaches/Academy';
 import SubscriptionPage from './Components/SubscriptionPage/SubscriptionPage';
+import CategoryPage from './Common/Category/Category';
+import CommingSoon from './Common/CommingSoon/CommingSoon';
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
               <Route path="/fitnessacademy" component={FitnessAcademy} />
               <Route path="/fitnesstrainer" component={FitnessCoaches} />
               <Route path="/subscription" component={SubscriptionPage} />
+              <Route path="/category" component={CategoryPage} />
+              <Route path="/commingsoon" component={CommingSoon} />
         </Switch>
       </Router>
     </div>

@@ -1,0 +1,24 @@
+.header{
+    display: none !important;
+}
+
+@media(max-width:750px){
+    .header{
+        display: flex !important;
+        width: 100% !important;
+        align-items: center !important;
+        justify-content: space-evenly !important;
+        background-color: #fff !important;
+        z-index: 5000 !important;
+        color: #1b1b1b !important;
+        padding: 20px 0px !important;
+        position: sticky !important;
+        top: 0px !important;
+        box-shadow: -2px 4px 10px 6px rgba(0, 0, 0, 0.5) !important;
+    }
+
+    .link{
+        text-decoration: none !important;
+        color: #1b1b1b !important;
+    }
+}

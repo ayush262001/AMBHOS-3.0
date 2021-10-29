@@ -1,0 +1,33 @@
+.major{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap !important;
+    width: 100vw !important;
+}
+
+.link{
+    text-decoration: none !important;
+    color: #1b1b1b !important;
+}
+
+.category{
+    margin: 50px 0px !important;
+}
+
+.icon{
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+    object-fit: cover;
+    border-bottom: 3px solid orangered !important;
+    border-right: 3px solid orangered !important;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center !important;
+    margin: 10px 20px !important;
+}

@@ -15,70 +15,80 @@ function Academy() {
         academyName: "FC GOA CITY",
         academyLocation : "SGD Stadium, GOA",
         verified: true,
-        rating: "4"
+        rating: "4",
+        link: "/profile/fitnessacademy"
     },
     {
         logo: "/sports.jpg",
         academyName: "FC GOA CITY",
         academyLocation : "SGD Stadium, GOA",
         verified: true,
-        rating: "4"
+        rating: "4",
+        link: "/profile/fitnessacademy"
     },
     {
         logo: "/sports.jpg",
         academyName: "FC GOA CITY",
         academyLocation : "SGD Stadium, GOA",
         verified: true,
-        rating: "4"
+        rating: "4",
+        link: "/profile/fitnessacademy"
     },
     {
         logo: "/sports.jpg",
         academyName: "FC GOA CITY",
         academyLocation : "SGD Stadium, GOA",
         verified: true,
-        rating: "4"
+        rating: "4",
+        link: "/profile/fitnessacademy"
     },
     {
         logo: "/sports.jpg",
         academyName: "FC GOA CITY",
         academyLocation : "SGD Stadium, GOA",
         verified: true,
-        rating: "4"
+        rating: "4",
+        link: "/profile/fitnessacademy"
     },
     {
         logo: "/sports.jpg",
         academyName: "FC GOA CITY",
         academyLocation : "SGD Stadium, GOA",
         verified: true,
-        rating: "4"
+        rating: "4",
+        link: "/profile/fitnessacademy"
     },
     {
         logo: "/sports.jpg",
         academyName: "FC GOA CITY",
         academyLocation : "SGD Stadium, GOA",
         verified: true,
-        rating: "4"
+        rating: "4",
+        link: "/profile/fitnessacademy"
     },
     {
         logo: "/sports.jpg",
         academyName: "FC GOA CITY",
         academyLocation : "SGD Stadium, GOA",
         verified: true,
-        rating: "4"
+        rating: "4",
+        link: "/profile/fitnessacademy"
     },
     {
         logo: "/sports.jpg",
         academyName: "FC GOA CITY",
         academyLocation : "SGD Stadium, GOA",
         verified: true,
-        rating: "4"
+        rating: "4",
+        link: "/profile/fitnessacademy"
     },
     {
         logo: "/sports.jpg",
         academyName: "FC GOA CITY",
         academyLocation : "SGD Stadium, GOA",
         verified: true,
-        rating: "4"
+        rating: "4",
+        link: "/profile/fitnessacademy"
     }]
 
 
@@ -88,6 +98,7 @@ function Academy() {
         {logo: "/gymnew.png", category: "DANCE"},
         {logo: "/gymnew.png", category: "SWIMMING"},
         {logo: "/gymnew.png", category: "YOGA & MEDITATION"},
+        {logo: "/gymnew.png", category: "Commando Training"},
     ]
 
     const closethisPopup = ()=>{
@@ -115,7 +126,7 @@ function Academy() {
                 {/* Academy Component will be fetched here */}
                 <div className="items">
                        {array.map(element=>(
-                           <AcademyItem logo={element.logo} academyName={element.academyName} academyLocation={element.academyLocation} verified={element.verified} rating={element.rating} />
+                           <AcademyItem logo={element.logo} academyName={element.academyName} academyLocation={element.academyLocation} verified={element.verified} rating={element.rating} link={element.link}/>
                        ))}
                 </div>
             </div>

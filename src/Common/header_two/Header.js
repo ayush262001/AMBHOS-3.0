@@ -18,7 +18,7 @@ function header() {
      }
 
     return (
-       <div className={Styles.Header_section}>
+       <div className={Styles.Headersection}>
             <div className={Styles.Header_left}>
                   <img src="/Images/logo.png" alt="" />
                    {/*add a logo image here and remove that h1 of ambhos*/}
@@ -46,7 +46,6 @@ function header() {
                        <p className={Styles.Header_right_heading_dropdown}>SPORTS <ArrowDropDownIcon /></p>
                        <div className={Styles.Header_dropdown_services}>
                             {/* dropdown for services will be created */}
-                            <a className={Styles.anchortag} href="./gym">Cricket</a>
                             <a className={Styles.anchortag} href="./yogaandmeditation">Football</a>
                             <a className={Styles.anchortag} href="./dance">Basketball</a>
                             <a className={Styles.anchortag} href="./martialart">Athelete</a>

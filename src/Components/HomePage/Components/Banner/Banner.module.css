@@ -9,6 +9,18 @@
     height: 578px;
 }
 
+@media(max-width: 1150px){
+    .bannerImage{
+        height: 380px !important;
+     }
+ 
+     .banner
+     {
+        height: 380px !important;
+     }
+}
+
+
 @media(max-width:767px){
      .bannerImage{
         height: 300px !important;
@@ -17,5 +29,16 @@
      .banner
      {
         height: 300px !important;
+     }
+}
+
+@media(max-width:550px){
+    .bannerImage{
+        height: 220px !important;
+     }
+ 
+     .banner
+     {
+        height: 220px !important;
      }
 }

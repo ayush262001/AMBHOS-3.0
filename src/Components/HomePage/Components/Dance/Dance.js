@@ -54,10 +54,7 @@ function Dance() {
       {/*for left section with content*/}
       <div className={Styles.left}>
         <h2 className={Styles.title}>Ambhos<br/> The spirit to heal, The spirit to care</h2>
-        <p className={Styles.para}>
-We connect people to the best fitness and sports services.
-Book your subscription now.
-Upcoming services- Healthcare.
+        <p className={Styles.para}>Ambhos strive to keep everyone fit and healthy through range of holistic offerings  that includes Health, Wellness, Fitness and Sports services, as well as covering  promoting and organizing the sports events involving India, and allowing people to connect with environment through our adventurous activities.
 </p>
         <p className={Styles.instruction}>Click on respective box to visit page</p>
       </div>

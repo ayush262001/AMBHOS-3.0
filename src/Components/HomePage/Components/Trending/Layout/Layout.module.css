@@ -7,6 +7,7 @@
 
 .image{
     width: 400px;
+    height: 200px !important;
 }
 
 
@@ -15,7 +16,7 @@
    font-style: normal !important;
    font-family:Calibri;
     padding:0px 20px;
-    width: 400px;
+    width: 380px;
     color: black;
 }
 

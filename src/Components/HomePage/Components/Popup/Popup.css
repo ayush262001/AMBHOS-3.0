@@ -6,7 +6,7 @@
     position: fixed;
     top: calc(50% - 150px);
     left: 5%;
-    z-index: 400 !important;
+    z-index: 4000 !important;
     background-color: #fff;
     border-radius:10px;
     align-items: center;
